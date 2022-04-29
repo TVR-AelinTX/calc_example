@@ -89,8 +89,8 @@ let data = {};
 let npc = 0.75;
 let mw = undefined;
 
-if (location.href.split('?')[1]){
-	const params = location.href.split('?')[1].split('&');
+if (location.href.split('?')[2]){
+	const params = location.href.split('?')[2].split('&');
 	for (x in params){
 		data[params[x].split('=')[0]] = params[x].split('=')[1];
 	}
